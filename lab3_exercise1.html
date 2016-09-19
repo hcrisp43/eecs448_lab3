@@ -1,0 +1,22 @@
+<html>
+<body>
+  <title>Enter Password (at least 8 characters): </title>
+  <input type="password" id="firstEntry">
+  <title>Validate Password: </title>
+  <input type="password" id="validate">
+  <button onclick="validatePasswords()">Validate</button>
+  <script>
+  function validatePasswords()
+  {
+    if(document.getElementById("firstEntry").value != document.getElementById)("validate").value)
+    {
+      alert("The passwords entered don't match.");
+    }
+    else if(document.getElementById("firstEntry").value =< 8 && document.getElementById)("validate").value =< 8)
+    {
+      alert("The passwords entered are not 8 characters long");
+    }
+  }
+  </script>
+<body>
+</html>

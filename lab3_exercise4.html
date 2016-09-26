@@ -1,0 +1,45 @@
+<html>
+
+<body>
+
+<div id="myDiv">
+This is exercise 4 of lab 3.<br>
+</div>
+
+Border:<br>
+Red(0-255): <input type="text" id="borderRed"><br>
+Green(0-255): <input type="text" id="borderGreen"><br>
+Blue(0-255): <input type="text" id="borderBlue"><br>
+Width: <input type="text" id="borderWidth"><br>
+<br>
+Background color:<br>
+Red(0-255): <input type="text" id="backgroundRed"><br>
+Green(0-255): <input type="text" id="backgroundGreen"><br>
+Blue(0-255): <input type="text" id="backgroundBlue"><br>
+<br>
+
+<button onclick="changeColor()">Change Colors</button>
+<script>
+
+function changeColor(){
+  var changeDiv = document.getElementById("myDiv");
+  var borderRed = document.getElementById("borderRed");
+  var borderGreen = document.getElementById("borderGreen");
+  var borderBlue = document.getElementById("borderBlue");
+  var borderWidth = document.getElementById("borderWidth");
+  var backgroundRed = document.getElementById("backgroundRed");
+  var backgroundGreen = document.getElementById("backgroundGreen");
+  var backgroundBlue = document.getElementById("backgroundBlue");
+
+  changeDiv.style.borderColor = rgb(borderRed.value, borderGreen.value, borderBlue.value);
+  changeDiv.style.borderWidth = borderWidth.value;
+  changeDiv.style.backgroundColor = rgb(backgroundRed.value, backgroundGreen.value, backgroundBlue.value);
+
+
+}
+</script>
+
+
+</body>
+
+</html>

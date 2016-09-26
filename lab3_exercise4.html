@@ -30,10 +30,10 @@ function changeColor(){
   var backgroundRed = document.getElementById("backgroundRed");
   var backgroundGreen = document.getElementById("backgroundGreen");
   var backgroundBlue = document.getElementById("backgroundBlue");
+  
+  changeDiv.style.border = borderWidth.value + 'px solid rgb(' + borderRed.value.toString() + ',' + borderGreen.value.toString() + ',' + borderBlue.value.toString()+')';
 
-  changeDiv.style.borderColor = rgb(borderRed.value, borderGreen.value, borderBlue.value);
-  changeDiv.style.borderWidth = borderWidth.value;
-  changeDiv.style.backgroundColor = rgb(backgroundRed.value, backgroundGreen.value, backgroundBlue.value);
+  changeDiv.style.backgroundColor = 'rgb(' + backgroundRed.value.toString() + ',' + backgroundGreen.value.toString() + ',' + backgroundBlue.value.toString() + ')';
 
 
 }
